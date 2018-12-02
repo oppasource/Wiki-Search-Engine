@@ -7,7 +7,7 @@
 1. First run indexer.py with following arguments. 
 			First argument:- /path/to/xml/dump
 			Second argument:- /path/to/folder/of/indexed_blocks/
-	It will create max 150mb of each index blocks with file name format "<block number> <first word of index> <last word of index>.txt"
+	It will create index blocks of a particular maximum size with file name format "<block number> <first word of index> <last word of index>.txt"
 
 	example usage:- python3 indexer.py /path/to/xml/dump /path/to/folder/of/indexed_blocks/
 
@@ -17,7 +17,7 @@
 2. Second run merger.py with following arguments. 
 			First argument:- /path/to/folder/of/indexed_blocks/
 			Second argument:- /path/to/folder/of/merged_blocks/
-	It will create max 250mb of each of merged blocks with same file name format as before.
+	It will create merged blocks of a particular maximum size with same file name format as before.
 
 	example usage:- python3 merger.py /path/to/folder/of/indexed_blocks/ /path/to/folder/of/merged_blocks/ 
 
